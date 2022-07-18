@@ -2,8 +2,9 @@
 :root
 {
     --primary-bg-color:#333333;
+    --footer-bg-color:#444444;
     --secondary-bg-color:#f4f4f4;
-    --highlight-color:#dec1a2;
+    --highlight-bg-color:#f7c08a;
 
     --primary-text-color:#dedede;
     --secondary-text-color:#333333;
@@ -30,6 +31,8 @@ body
 .container
 {
     max-width: 1200px;
+    /* if the viewport is smaller than 1200px, then take up 90% */
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -55,11 +58,6 @@ img
     color: var(--highlight-text-color);
 }
 
-.selected-link
-{
-
-}
-
 .btn
 {
     display: inline-block;
@@ -74,15 +72,10 @@ img
     color: var(--primary-text-color);
 }
 
-.btn-color-light
+.btn-light-bg
 {
     background-color: var(--btn-light-bg);
     color: var(--secondary-text-color);
-}
-
-.selected-link
-{
-
 }
 
 .grid
@@ -100,10 +93,10 @@ img
     grid-template-columns: repeat(3,1fr);
 }
 
-.text-secondary-color
+/* .text-secondary-color
 {
 
-}
+} */
 
 /* **********Header********** */
 header
@@ -147,11 +140,89 @@ header nav
     justify-self: end;
 }
 
+.selected-link
+{
+    background-color: var(--btn-selected-bg);
+}
+
 /* **********Hero Section********** */
+#hero-section
+{
+    height: 60vh;
+    background-image: url("../img/showcase.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 0 0 0;
+    color: var(--primary-text-color);
+}
+
+#hero-section h2
+{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+}
 
 /* **********History Section********** */
+#history-section, #history-section > div
+{
+    height: 300px;
+}
+
+#history-section img
+{
+    height: 100%;
+    object-fit: cover;
+}
+
+#history-section > div:nth-child(2) > h3
+{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+#history-section > div:nth-child(2)
+{
+    background-color: var(--primary-bg-color);
+    text-align: center;
+    color: var(--primary-text-color);
+    padding: 0 32px;
+}
 
 /* **********Features Section********** */
+#features-section
+{
+    text-align: center;
+}
+
+#features-section > div:nth-child(2)
+{
+    background-color: var(--highlight-bg-color);
+}
+
+#features-section i
+{
+    font-size: 32px;
+    margin: 16px 0 16px 0;
+}
+
+#features-section h4
+{
+    margin-bottom: 16px;
+}
 
 /* **********Footer********** */
+footer
+{
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    padding: 16px 0;
+    color: var(--primary-text-color);
+}
+
+footer > p
+{
+    margin-bottom: 0;
+}
 
