@@ -1,0 +1,127 @@
+:root
+{
+      --highlight-color: #F8BF8A;
+      --primary-font-color: #ffffff;
+      --secondary-font-color: #000000;
+      --bg-color-light: #ffffff;
+      --primary-bg: #333333;
+      --secondary-bg: #444444;
+}
+/* CSS Reset */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*General Styles*/
+a
+{
+      text-decoration: none;
+      /*remove the underline from links*/
+}
+/*Reusable Styles*/
+.grid
+{
+      display: grid;
+}
+.flex
+{
+      display: flex;
+}
+.grid-col-2
+{
+      grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-3
+{
+      grid-template-columns: repeat(3, 1fr);
+}
+.btn-dark
+{
+      background: var(--primary-bg);
+      color: var(--primary-font-color);
+}
+.btn-light
+{
+      background: var(--bg-color-light);
+      color: var(--primary-bg)
+}
+.container
+{
+      max-width: 1200px;
+      margin: 0 auto;
+}
+.highlight-text
+{
+      color: var(--highlight-color);
+}
+.btn
+{
+      display: inline-block;
+      /*required to apply padding on all 4 sides*/
+      padding: 8px 16px;
+}
+img
+{
+      width: 100%;
+      /*automatically make the image size 100% of the parent instead of the full size*/
+      max-width: 100%;
+      /*the image is never going to get larger than it's original width*/
+     
+}
+
+/******Navigation Bar*****/
+header
+{
+      background: var(--primary-bg);
+      position: sticky;
+      top: 0;
+}
+
+header h1 > a
+{
+      padding-left: 16px;
+      color: var(--primary-font-color);
+}
+nav li
+{
+      display: inline-block;
+}
+.nav-list
+{
+      justify-items: end;
+      align-items: center;
+}
+.nav-list li
+{
+      padding: 8px 16px;
+}
+.nav-list a
+{
+      color: var(--primary-font-color);
+}
+/******Hero Section*****/
+#hero-section
+{
+      background-image: url(../img/showcase.jpg);
+      height: calc(60vh - 37px);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      align-items: center;
+      color: var(--primary-font-color);
+}
+#hero-section > div
+{
+      text-align: center;
+}
+/******History Section*****/
+#history-section > div
+{
+      background: var(--primary-bg);
+      color: var(--primary-font-color);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+}
