@@ -20,7 +20,16 @@ a
       text-decoration: none;
       /*remove the underline from links*/
 }
+body
+{
+      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
+}
 /*Reusable Styles*/
+.margin-bottom
+{
+      margin-bottom: 1rem;
+}
 .grid
 {
       display: grid;
@@ -29,6 +38,10 @@ a
 {
       display: flex;
 }
+.grid-header
+{
+      grid-template-columns: 100px 1fr;
+}
 .grid-col-2
 {
       grid-template-columns: repeat(2, 1fr);
@@ -36,6 +49,13 @@ a
 .grid-col-3
 {
       grid-template-columns: repeat(3, 1fr);
+}
+.btn
+{
+      display: inline-block;
+      /*required to apply padding on all 4 sides*/
+      padding: 10px 16px;
+      font-size: 0.9rem;
 }
 .btn-dark
 {
@@ -56,12 +76,6 @@ a
 {
       color: var(--highlight-color);
 }
-.btn
-{
-      display: inline-block;
-      /*required to apply padding on all 4 sides*/
-      padding: 8px 16px;
-}
 img
 {
       width: 100%;
@@ -70,8 +84,18 @@ img
       /*the image is never going to get larger than it's original width*/
      
 }
-
+.link-hover:hover,
+.link-hover > a:hover
+{
+      background: var(--secondary-bg);
+      color: var(--highlight-color);
+}
 /******Navigation Bar*****/
+h1
+{
+      font-size: 1.5rem;
+      align-self: center;
+}
 header
 {
       background: var(--primary-bg);
@@ -88,16 +112,15 @@ nav li
 {
       display: inline-block;
 }
-.nav-list
+header > div > nav
 {
-      justify-items: end;
-      align-items: center;
+      justify-self: end;
 }
-.nav-list li
+header > div > nav li
 {
       padding: 8px 16px;
 }
-.nav-list a
+header > div > nav a
 {
       color: var(--primary-font-color);
 }
@@ -115,8 +138,20 @@ nav li
 #hero-section > div
 {
       text-align: center;
+      padding: 0 5rem;
 }
 /******History Section*****/
+#history-section,
+#history-section > div
+{
+      height: 300px;
+}
+#history-section > div > img
+{
+      height: 100%;
+      object-fit: cover;
+      
+}
 #history-section > div
 {
       background: var(--primary-bg);
@@ -124,4 +159,30 @@ nav li
       align-items: center;
       justify-content: center;
       text-align: center;
+}
+#history-section > div:nth-child(2)
+{
+      padding: 0 5rem;
+}
+/******Features Section*****/
+#features-section
+{
+      text-align: center;
+}
+#features-section > div
+{
+      padding: 20px;
+}
+#features-section > div:nth-child(even)
+{
+      background: var(--highlight-color);
+}
+#features-section i
+{
+      font-size: 2rem;
+      padding: 2rem;
+}
+#features-section h4
+{
+      font-size: 1.2rem;
 }

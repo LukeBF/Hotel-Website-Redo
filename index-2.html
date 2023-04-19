@@ -5,25 +5,28 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="https://kit.fontawesome.com/807c979bae.js" crossorigin="anonymous"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/style-2.css">
             <title>FSD Hotel</title>
       </head>
       <body>
             <header>
-                  <div class="grid grid-col-2 container">
+                  <div class="grid grid-header container">
                         <h1>
                               <a href="#">FSD</a>
                         </h1>
                         
-                        <nav class="nav-list grid">
+                        <nav class="grid">
                               <ul>
-                                    <li>
+                                    <li class="link-hover">
                                           <a href="#">Home</a>
                                     </li>
-                                    <li>
+                                    <li class="link-hover">
                                           <a href="#">About</a>
                                     </li>
-                                    <li>
+                                    <li class="link-hover">
                                           <a href="#">Contact</a>
                                     </li>
                               </ul>
@@ -34,8 +37,8 @@
             <main>
                   <section id="hero-section" class="grid">
                         <div class="container">
-                              <h2><span class="highlight-text">Enjoy</span> Your Stay</h2>
-                              <p>
+                              <h2 class="margin-bottom"><span class="highlight-text">Enjoy</span> Your Stay</h2>
+                              <p class="margin-bottom">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam, in voluptate iure rerum eveniet nulla laudantium molestiae qui beatae.
                               </p>
                               <a href="" class="btn btn-dark">About Our Hotel</a>
@@ -43,11 +46,14 @@
                   </section>
 
                   <section id="history-section" class="grid grid-col-2">
-                        <img src="img/photo-1.jpg" alt="a picture of hotel">
+                        <div>
+                              <img src="img/photo-1.jpg" alt="a picture of hotel">      
+                        </div>
+                        
                         <div class="flex">
                               <div>
-                                    <h3><span class="highlight-text">The History</span> of Our Hotel</h3>
-                                    <p>
+                                    <h3 class="margin-bottom"><span class="highlight-text">The History</span> of Our Hotel</h3>
+                                    <p class="margin-bottom">
                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perspiciatis voluptatibus corporis officia tenetur earum.
                                     </p>
                                     <a href="" class="btn btn-light">Read More</a>
@@ -55,24 +61,24 @@
                         </div>
                   </section>
 
-                  <section id="features-section">
+                  <section id="features-section" class="grid grid-col-3">
                         <div>
                               <i class="fa-solid fa-hotel"></i>
-                              <h4>Close to CN Tower</h4>
+                              <h4 class="margin-bottom">Close to CN Tower</h4>
                               <p>
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, cupiditate.
                               </p>
                         </div>
                         <div>
                               <i class="fa-solid fa-utensils"></i>
-                              <h4>Free Breakfast</h4>
+                              <h4 class="margin-bottom">Free Breakfast</h4>
                               <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, vitae?
                               </p>
                         </div>
                         <div>
                               <i class="fa-solid fa-dumbbell"></i>
-                              <h4>Free Gym</h4>
+                              <h4 class="margin-bottom">Free Gym</h4>
                               <p>
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, magnam.
                               </p>
