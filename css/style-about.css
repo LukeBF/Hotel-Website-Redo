@@ -1,0 +1,67 @@
+/****Reusable Styles****/
+.card-grid
+{
+      grid-template-columns: 10% 1fr;
+}
+/****About Section****/
+#about-section > div > div:nth-child(2) > img
+{
+      
+      width: 50%;
+      border-radius: 75%;
+}
+/****Reviews Section****/
+#reviews-section
+{
+      background-image: url(../img/test-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      align-items: center;
+      height: 60vh;
+      color: var(--primary-font-color);
+}
+#reviews-section > div > h2
+{
+      text-align: center;
+      padding: 5rem 0 1.5rem 0;
+}
+.review-card
+{
+      background-color: var(--highlight-color);
+      width: 1200px;
+      margin: 0 auto;
+}
+.review-card > img
+{
+      width: 60%;
+      justify-self: center;
+      border-radius: 50%;
+      padding: 1rem 0;
+}
+.review-card > p
+{
+      align-self: center;
+      padding: 1rem 0;
+}
+#reviews-section > div > div:nth-child(2)
+{
+      margin-bottom: 1.5rem;
+}
+/* #reviews-section > div
+{
+      background-color: var(--highlight-color);
+} */
+/* #reviews-section img
+{
+      width: 15%;
+}
+#reviews-section > div
+{
+      width: 80%;
+      margin: 0 auto;
+}
+#reviews-section > div > div:nth-child(2)
+{
+      margin-bottom: 1.5rem;
+} */
